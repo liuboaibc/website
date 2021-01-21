@@ -208,8 +208,16 @@ var bindClickClose = function() {
     })
 }
 
+var bindAddPadding = function() {
+    var join = $('#close-join')
+    if (join) {
+        $('.main-section').addClass('padding')
+    }
+}
+
 var language = '{{.Site.Language.Lang}}'
 
+bindAddPadding()
 bindClickClose()
 
 bindScrollChangeHeader()
